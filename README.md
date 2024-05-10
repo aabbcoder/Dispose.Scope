@@ -37,7 +37,7 @@ using Dispose.Scope;
 
 using (var scope = DisposeScope.BeginScope())
 {
-    var needDispose = new NeedDisposeClass("A1");
+    var needDispose = new NeedDispose("A1");
     // register to current scope
     needDispose.RegisterDisposeScope();
 }
